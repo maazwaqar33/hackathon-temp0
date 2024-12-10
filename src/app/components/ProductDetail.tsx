@@ -175,6 +175,7 @@ export default function ProductDetail() {
 
               {/* Buttons */}
               <div className="flex gap-4">
+          
                 <button className="flex-1 border border-black text-black rounded-full py-3 font-semibold">
                   View Cart
                 </button>

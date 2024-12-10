@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function TopPicks() {
   return (
@@ -89,9 +90,11 @@ export default function TopPicks() {
 
         {/* Button */}
         <div className="text-center mt-12">
+        <Link href="/shop">
           <button className="text-black font-semibold py-3 px-8 border-b border-black hover:text-slate-700 hover:scale-110 transition-all duration-450 transform hover:translate-x-[-3px] hover:rotate-6">
             View More
           </button>
+          </Link>
         </div>
       </div>
     </section>

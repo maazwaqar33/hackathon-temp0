@@ -1,5 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 
 export default function Hero() {
   return (
@@ -11,9 +12,11 @@ export default function Hero() {
           <h1 className="font-poppins font-medium text-4xl sm:text-5xl lg:text-6xl text-gray-800">
             Rocket Single Seater
           </h1>
+          <Link href="/shop">
           <button className="text-black font-semibold py-3 px-8 border-b border-black hover:text-slate-700 hover:scale-110 transition-all duration-300 transform hover:translate-x-[-3px] hover:rotate-1">
             Shop Now
           </button>
+          </Link>
         </div>
 
         {/* Right Section: Image */}

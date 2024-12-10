@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function NewArrivals() {
   return (
@@ -23,9 +24,11 @@ export default function NewArrivals() {
         <h1 className="text-3xl lg:text-4xl font-bold text-black leading-snug">
           Asgaard Sofa
         </h1>
+        <Link href="/product">
         <button className="px-6 py-3 border-2 border-black text-black font-medium hover:bg-black hover:text-white transition duration-300">
           Order Now
         </button>
+        </Link>
       </div>
     </section>
   );

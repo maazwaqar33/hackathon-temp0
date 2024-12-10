@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import React from 'react'
 
 
@@ -52,12 +53,14 @@ export default function Checkout() {
       <span className="text-gray-800 font-bold">Total</span>
       <span className="text-yellow-600 font-bold">Rs. 250,000.00</span>
     </div>
+    <Link href="/checkout">
     <button
       type="submit"
       className="w-full sm:w-48 py-2 text-black border border-black rounded-md hover:bg-gray-100 focus:ring-2 focus:ring-black focus:outline-none"
     >
       Check Out
     </button>
+    </Link>
   </div>
 </div>
   );

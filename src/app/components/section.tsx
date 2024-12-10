@@ -1,5 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 
 export default function ProductSection() {
   return (
@@ -16,9 +17,11 @@ export default function ProductSection() {
             className="object-contain w-[90%] sm:w-[50%] md:w-[70%] lg:w-[70%]"
           />
           <h2 className="font-poppins font-medium text-xl text-gray-800">Side Table</h2>
+          <Link href="/shop">
           <button className="text-black font-semibold py-2 px-6 border-b border-black hover:text-slate-700 hover:scale-110 transition-all duration-300 transform hover:translate-x-[-3px] hover:rotate-1">
             View More
           </button>
+          </Link>
         </div>
 
         {/* Second Image with Button */}
@@ -31,9 +34,11 @@ export default function ProductSection() {
             className="object-contain w-[90%] sm:w-[50%] md:w-[70%] lg:w-[70%]"
           />
           <h2 className="font-poppins font-medium text-xl text-gray-800">Sofa</h2>
+          <Link href="/shop">
           <button className="text-black font-semibold py-2 px-6 border-b border-black hover:text-slate-700 hover:scale-110 transition-all duration-300 transform hover:translate-x-[-3px] hover:rotate-1">
             View More
           </button>
+          </Link >
         </div>
 
       </div>

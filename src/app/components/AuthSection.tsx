@@ -8,6 +8,7 @@ export default function AuthSection() {
     <div className="flex flex-col justify-between w-full max-w-md">
       <h2 className="text-2xl font-bold text-black mb-4">Log In</h2>
       <form className="space-y-6 w-full">
+        
         {/* Username/Email */}
         <div>
           <label className="block text-sm font-medium text-gray-700 mb-1" htmlFor="login-email">

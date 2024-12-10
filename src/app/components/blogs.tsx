@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import { FiCalendar, FiClock } from 'react-icons/fi';
 import React from 'react';
+import Link from 'next/link';
 
 export default function Blogs() {
   const blogData = [
@@ -52,9 +53,11 @@ export default function Blogs() {
             {/* Blog Content */}
             <div className="p-4 text-center space-y-4">
               <h3 className="text-lg font-semibold text-black">{blog.title}</h3>
+              <Link href="/blog">
               <button className="text-black font-semibold py-3 px-8 border-b border-black hover:text-slate-700 hover:scale-110 transition-all duration-300 transform hover:translate-x-[-3px] hover:rotate-1">
                 Read More
               </button>
+              </Link>
               <div className="flex justify-center items-center text-black text-sm space-x-4 mt-4">
                 <span className="flex items-center">
                   <FiCalendar className="mr-1" /> {blog.date}
@@ -70,9 +73,11 @@ export default function Blogs() {
 
       {/* View All Button */}
       <div className="text-center mt-8">
+        <Link href="/blog">
         <button className="text-black font-semibold py-3 px-8 border-b border-black hover:text-slate-700 hover:scale-110 transition-all duration-300 transform hover:translate-x-[-3px] hover:rotate-1">
           View All Post
         </button>
+        </Link>
       </div>
     </section>
   );
