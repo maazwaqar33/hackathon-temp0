@@ -8,6 +8,9 @@ export default {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        sans: ['Poppins'],
+      },
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
