@@ -1,7 +1,13 @@
 import React from "react";
 import Image from "next/image";
 
-export default function HeroSection({ heading, subheading }) {
+// Define the props type
+interface HeroSectionProps {
+  heading?: string;
+  subheading?: string;
+}
+
+export default function HeroSection({ heading, subheading }: HeroSectionProps) {
   return (
     <section className="relative min-h-[316px]">
       {/* Background Image */}
