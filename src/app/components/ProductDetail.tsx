@@ -9,7 +9,7 @@ export default function ProductDetail() {
   const [showModal, setShowModal] = useState(false); // State to toggle modal visibility
 
   return (
-    <section className="bg-white h-auto p-4 md:p-8 flex justify-center">
+     <section className="bg-white h-auto p-4 md:p-8 flex justify-center">
       <div className="flex flex-col md:flex-row w-full max-w-7xl">
         {/* Left Column: Small Images */}
         <div className="flex md:flex-col space-x-4 md:space-x-0 md:space-y-4 justify-center md:justify-start mb-4 md:mb-0">
@@ -100,7 +100,7 @@ export default function ProductDetail() {
 
           {/* Quantity Picker & Add to Cart Button */}
           <div className="mt-6 flex flex-col sm:flex-row sm:items-start sm:justify-start space-y-4 sm:space-y-0 sm:space-x-4">
-            <div className="flex items-center border border-gray-300 rounded-md w-[20%] sm:w-auto">
+            <div className="flex items-center border border-gray-300 rounded-md w-[30%] sm:w-auto">
               <button className="px-3 py-1 text-lg text-black">-</button>
               <span className="px-4">1</span>
               <button className="px-3 py-1 text-lg text-black">+</button>
@@ -131,7 +131,7 @@ export default function ProductDetail() {
       {/* Checkout Popup Modal */}
       {showModal && (
         <div className="fixed inset-0 flex items-start justify-end bg-black bg-opacity-50 z-50">
-          <div className="bg-white h-full w-[400px] rounded-lg shadow-lg p-6 relative overflow-y-auto">
+          <div className="bg-white h-[80%] w-[400px] rounded-lg shadow-lg p-6 relative flex flex-col">
             {/* Header */}
             <div className="flex items-center justify-between mb-6">
               <h2 className="text-xl font-bold">Shopping Cart</h2>
@@ -154,7 +154,7 @@ export default function ProductDetail() {
             </div>
 
             {/* Product Section */}
-            <div className="flex items-center gap-4 mb-6">
+            <div className="flex items-center gap-4 mb-6 overflow-auto">
               <div className="w-16 h-16 bg-[#FBEBB5] rounded-md"></div>
               <div className="flex-1">
                 <h3 className="font-bold">Asgaard Sofa</h3>
@@ -165,20 +165,23 @@ export default function ProductDetail() {
             {/* Spacer for Bottom Alignment */}
             <div className="flex-grow"></div>
 
-            {/* Subtotal */}
-            <div className="flex items-center justify-between mb-6">
-              <span className="text-gray-600">Subtotal</span>
-              <span className="font-bold text-[#B88E2F]">Rs. 250,000.00</span>
-            </div>
+            {/* Bottom Section */}
+            <div className="absolute bottom-0 left-0 w-full p-6 bg-white border-t border-gray-300">
+              {/* Subtotal */}
+              <div className="flex items-center justify-between mb-4">
+                <span className="text-gray-600">Subtotal</span>
+                <span className="font-bold text-[#B88E2F]">Rs. 250,000.00</span>
+              </div>
 
-            {/* Buttons */}
-            <div className="flex gap-4">
-              <button className="flex-1 border border-black text-black rounded-full py-3 font-semibold">
-                View Cart
-              </button>
-              <button className="flex-1 border border-black text-black rounded-full py-3 font-semibold">
-                Checkout
-              </button>
+              {/* Buttons */}
+              <div className="flex gap-4">
+                <button className="flex-1 border border-black text-black rounded-full py-3 font-semibold">
+                  View Cart
+                </button>
+                <button className="flex-1 border border-black text-black rounded-full py-3 font-semibold">
+                  Checkout
+                </button>
+              </div>
             </div>
           </div>
         </div>
