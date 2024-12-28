@@ -36,3 +36,12 @@ tailwind.config.js
 
 # Next.js static files (if you are using static export)
 public/_next/
+
+
+# Sanity-related
+sanity.json
+sanity/*
+!.sanity/schema/ # Include only schema definitions
+sanity/lib/client.ts # Ignore client files with sensitive configurations
+sanity/env/* # Ignore Sanity environment files, if applicable
+
